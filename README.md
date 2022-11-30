@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# This is a test project.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+It serves the purpose of getting familiarised with React.js alongside Typescript and Styled Components. Create-React-App was used to initiate this project.
 
 ## Available Scripts
 
