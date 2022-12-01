@@ -1,9 +1,11 @@
 import { StyledHeader } from "./Header.styled";
 
-interface Props {
+interface HeaderProps {
   children: React.ReactNode;
 }
 
-export const Header: React.FC<Props> = (props) => {
-  return <StyledHeader> {props.children}</StyledHeader>;
+const Header: React.FC<HeaderProps> = ({ children }) => {
+  return <StyledHeader> {children}</StyledHeader>;
 };
+
+export default Header;

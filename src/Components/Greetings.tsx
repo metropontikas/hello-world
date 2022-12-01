@@ -1,8 +1,16 @@
-export const Greetings = () => {
+import { Wrapper, Greeting, Name } from "./Greetings.styled";
+
+type GreetingsProps = {
+  name: string;
+};
+
+const Greetings = ({ name }: GreetingsProps): JSX.Element => {
   return (
-    <>
-      <h1>Hey, it's me!</h1>
-      <h3>Mario!!</h3>
-    </>
+    <Wrapper>
+      <Greeting>Hey, it's me!</Greeting>
+      <Name>{name}!!</Name>
+    </Wrapper>
   );
 };
+
+export default Greetings;
