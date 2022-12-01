@@ -1,13 +1,12 @@
-import React from "react";
-import { Greetings } from "./Components/Greetings";
-import { Header } from "./Components/Header";
-import { Main } from "./Components/Main";
+import Header from "./Components/Header";
+import Greetings from "./Components/Greetings";
+import Message from "./Components/Message";
 
-function App() {
+function App(): JSX.Element {
   return (
     <Header>
-      <Greetings />
-      <Main />
+      <Greetings name="Mario" />
+      <Message />
     </Header>
   );
 }
