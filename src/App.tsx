@@ -1,6 +1,7 @@
-import Header from "./Components/Header";
 import Greetings from "./Components/Greetings";
 import Message from "./Components/Message";
+
+import { Wrapper } from "./Components/Modals/Wrapper.styled";
 
 const nameList: string[] = [
   "Mario",
@@ -14,10 +15,10 @@ const nameList: string[] = [
 
 function App(): JSX.Element {
   return (
-    <Header>
+    <Wrapper marginTop={0}>
       <Greetings nameList={nameList} />
       <Message />
-    </Header>
+    </Wrapper>
   );
 }
 
