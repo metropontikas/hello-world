@@ -1,3 +1,17 @@
+### Features to add:
+
+~ Change message output according to name selection
+~ Add name selection logic for message output. Either user clicks on the name or the message appears when only one name is shown
+~ Change welcome text to "Welcome Player 1" and input message to "Choose a character"
+
+### 1.1.1
+
+~ Change slightly shown texts and create styled par element
+~ Extract Wrapper Component and make it a general wrapper div with a marginTop prop
+~ Replace Header.tsx, as it doesn't have any practical use, with Wrapper.styles.tsx
+~ Polish Typescript use in functions
+~ Extract conditional color-rendering function from Greetings.styled.tsx to parent component Greetings.tsx
+
 ### 1.1.0
 
 ~ Add a nameList array behind scenes with various Super Mario characters' names

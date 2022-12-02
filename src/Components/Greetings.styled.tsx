@@ -1,17 +1,13 @@
 import styled from "styled-components";
 
-interface StyledProps {
-  name: string;
+interface NameProps {
+  color: string;
 }
-export const Wrapper = styled.div`
-  margin-top: 10rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+export const Par = styled.p`
+  margin-top: 2rem;
 `;
 
 export const Input = styled.input`
-  margin: 1rem auto;
   width: 50%;
   padding: 0.5rem;
   text-align: center;
@@ -26,28 +22,7 @@ export const Input = styled.input`
 
 export const Greeting = styled.h1``;
 
-const handleNameColor: (nameInput: string) => string | undefined = (
-  nameInput: string
-) => {
-  switch (nameInput) {
-    case "Mario":
-      return (nameInput = "red");
-    case "Luigi":
-      return (nameInput = "green");
-    case "Wario":
-      return (nameInput = "purple");
-    case "Toad":
-      return (nameInput = "White");
-    case "Yoshi":
-      return (nameInput = "chartreuse");
-    case "Daisy":
-      return (nameInput = "yellow");
-    case "Peach":
-      return (nameInput = "pink");
-  }
-};
-
 export const Name = styled.h2`
-  color: ${(props: StyledProps) => handleNameColor(props.name)};
+  color: ${(props: NameProps) => props.color};
   padding: 1rem 0;
 `;
